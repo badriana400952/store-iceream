@@ -15,7 +15,7 @@ AppDataSource.initialize().then(async () => {
     app.use('/', router)
     app.use(express.static("uploads"));
 
-    app.listen(port, () => {
+    app.listen(port, "0.0.0.0", function () {
         console.log(`Express server has started on port ${port}.`)
     })
     // console.log("Inserting a new user into the database...")
