@@ -7,7 +7,7 @@ var cors = require('cors')
 
 AppDataSource.initialize().then(async () => {
     const app = express();
-    const port = 5000;
+    const port = parseInt(process.env.PORT)
 
     app.use(express.json());
     app.use(cors())

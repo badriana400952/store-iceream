@@ -5,11 +5,11 @@ import {Product} from "./entity/Product"
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: "localhost",
-    port: 5432,
+    host: "viaduct.proxy.rlwy.net",
+    port: 46304,
     username: "postgres",
-    password: "123456789",
-    database: "tugas-massundus",
+    password: "64adaAGAgadDceaEcAe-5dfga*dD5**5",
+    database: "railway",
     synchronize: true,
     logging: false,
     entities: ["src/entity/*.ts"],
